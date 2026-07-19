@@ -9,13 +9,13 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header fade-in">
   <div class="container header__inner">
-    <div class="header__brand">
+    <div class="header__brand slide-left">
       <img src="img/Logo.png" alt="Bloom Beauty Studio Logo" class="header__logo header__logo--small">
       <span class="header__name">Bloom Beauty Studio</span>
     </div>
-    <nav class="header__nav">
+    <nav class="header__nav slide-right">
       <a href="index.html">Inicio</a>
       <a href="sobre.html">Sobre mí</a>
       <a href="servicios.html">Servicios</a>
@@ -23,116 +23,149 @@
       <a href="opiniones.html">Opiniones</a>
       <a href="contacto.html">Contacto</a>
     </nav>
-    <a href="contacto.html" class="btn btn--primary btn--small">Reservar cita</a>
+    <a href="contacto.html" class="btn btn--primary btn--small slide-up">Reservar cita</a>
   </div>
 </header>
 
 <section class="section section--light fade-in">
   <div class="container">
-    <p class="manuscrita">Resultados que hablan por sí mismos.</p>
-    <h2>Galería</h2>
-    <p class="section__intro">
-      Una selección de trabajos realizados en cejas, manicura, láser y tratamientos faciales, para que puedas ver el estilo
-      y la delicadeza con la que trabajamos.
+
+    <p class="manuscrita fade-in">Resultados que hablan por sí mismos.</p>
+    <h2 class="fade-in">Galería</h2>
+
+    <p class="section__intro fade-in">
+      En Bloom Beauty Studio creemos que cada detalle importa. Aquí encontrarás una selección de trabajos reales
+      realizados en cejas, manicura, láser y tratamientos faciales. Cada imagen refleja nuestra filosofía:
+      <strong>naturalidad, precisión y bienestar</strong>.
+    </p>
+
+    <p class="section__intro fade-in">
+      Nuestro equipo, formado por <strong>Claudia Serrano</strong> y <strong>María López</strong>, trabaja con técnicas
+      profesionales y productos de alta calidad para garantizar resultados que respetan tu esencia. Esta galería es una
+      muestra del cariño, dedicación y experiencia que ponemos en cada servicio.
     </p>
 
     <div class="grid grid--gallery">
-      <div class="flip-card">
+
+      <!-- MANICURA PREMIUM -->
+      <div class="flip-card zoom-in">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/manicurapremium.png" alt="Manicura premium">
           </div>
           <div class="flip-card-back">
-            <h3>Manicura premium</h3>
+            <h3>Manicura Premium</h3>
             <p>
-              Manicura semipermanente con productos de alta calidad, preparación de la uña y acabado cuidado para que dure
-              semanas sin perder brillo.
+              Manicura semipermanente con preparación profunda de la uña, productos profesionales y acabado perfecto.
+              Diseñada para durar semanas sin perder brillo ni calidad.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="flip-card">
+      <!-- CEJAS PERFECTAS -->
+      <div class="flip-card zoom-in">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/cejasperfectas.png" alt="Cejas perfectas">
           </div>
           <div class="flip-card-back">
-            <h3>Cejas perfectas</h3>
+            <h3>Cejas Perfectas</h3>
             <p>
-              Diseño de cejas adaptado a tu rostro, con medición y técnica precisa para lograr una mirada más abierta y armónica.
+              Diseño de cejas con medición profesional, visagismo y técnica precisa. Realzamos tu mirada respetando la
+              armonía natural de tu rostro.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="flip-card">
+      <!-- LÁSER DIODO -->
+      <div class="flip-card zoom-in">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/laserdiodoenaccion.png" alt="Láser diodo en acción">
           </div>
           <div class="flip-card-back">
-            <h3>Láser diodo</h3>
+            <h3>Depilación Láser Diodo</h3>
             <p>
-              Sesiones de depilación láser realizadas con equipos profesionales, explicando cada paso y cuidando tu piel
-              antes y después del tratamiento.
+              Sesiones realizadas con aparatología avanzada y protocolos de seguridad. Explicamos cada paso y cuidamos tu
+              piel antes y después del tratamiento.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="flip-card">
+      <!-- FACIAL LUJO -->
+      <div class="flip-card zoom-in">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/tratamientofaciallujo.png" alt="Tratamiento facial lujo">
           </div>
           <div class="flip-card-back">
-            <h3>Facial lujo</h3>
+            <h3>Facial de Lujo</h3>
             <p>
-              Tratamiento facial completo con limpieza, exfoliación y mascarilla específica para devolver luminosidad y suavidad a tu piel.
+              Limpieza profunda, exfoliación, masaje y mascarilla específica para devolver luminosidad, suavidad y
+              frescura a tu piel. Un ritual completo de bienestar.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="flip-card">
+      <!-- DETALLE DEL ESTUDIO -->
+      <div class="flip-card zoom-in">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/detalleestudio.png" alt="Detalle del estudio">
           </div>
           <div class="flip-card-back">
-            <h3>Detalle del estudio</h3>
+            <h3>Detalles del Estudio</h3>
             <p>
-              Un espacio cuidado al detalle, con una estética cálida y ordenada para que te sientas cómoda desde que entras.
+              Un espacio cálido, ordenado y pensado para tu comodidad. Cada rincón está diseñado para que vivas una
+              experiencia relajante desde el primer momento.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="flip-card">
+      <!-- ANTES Y DESPUÉS -->
+      <div class="flip-card zoom-in">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="img/antesdespuescejas.png" alt="Antes y después cejas">
           </div>
           <div class="flip-card-back">
-            <h3>Antes y después</h3>
+            <h3>Antes y Después</h3>
             <p>
-              Comparativa de cejas antes y después del diseño, para que veas el cambio real que puede aportar un buen trabajo.
+              Comparativa real de cejas antes y después del diseño. Un ejemplo claro del cambio que aporta un trabajo
+              profesional y personalizado.
             </p>
           </div>
         </div>
       </div>
+
     </div>
+
+    <h3 class="gallery__subtitle fade-in">Belleza con intención</h3>
+    <p class="section__intro fade-in">
+      Cada imagen representa nuestro compromiso con la estética consciente: resultados naturales, técnicas profesionales
+      y un trato cercano que convierte cada visita en una experiencia única. Si quieres vivirlo en primera persona,
+      estaremos encantadas de recibirte.
+    </p>
+
+    <div class="center slide-up">
+      <a href="contacto.html" class="btn btn--primary">Reservar cita</a>
+    </div>
+
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer fade-in">
   <div class="container footer__inner">
-    <div class="footer__brand">
+    <div class="footer__brand slide-left">
       <img src="img/Logo.png" alt="Bloom Logo">
       <span>Bloom Beauty Studio</span>
     </div>
-    <div class="footer__links">
+    <div class="footer__links slide-right">
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="contacto.html">Contacto</a>
@@ -141,6 +174,6 @@
   </div>
 </footer>
 
+<script src="scroll-animations.js"></script>
 </body>
 </html>
-
