@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Beauty Studio · Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="header__brand">
+      <img src="img/Logo.png" alt="Bloom Beauty Studio Logo" class="header__logo header__logo--small">
+      <span class="header__name">Bloom Beauty Studio</span>
+    </div>
+    <nav class="header__nav">
+      <a href="intex.html">Inicio</a>
+      <a href="sobre.html">Sobre mí</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="galeria.html">Galería</a>
+      <a href="opiniones.html">Opiniones</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+    <a href="contacto.html" class="btn btn--primary btn--small">Reservar cita</a>
+  </div>
+</header>
+
+<section class="section section--light fade-in">
+  <div class="container">
+
+    <p class="manuscrita">Tu cita empieza con un mensaje.</p>
+    <h2>Reserva tu cita o contáctanos</h2>
+    <p>
+      Estamos aquí para ayudarte a elegir el tratamiento perfecto para ti. Puedes escribirnos directamente por WhatsApp,
+      seguirnos en redes o rellenar el formulario para que te contactemos.
+    </p>
+
+    <div class="contact__actions">
+      <a href="https://wa.me/34600000000" target="_blank" class="btn btn--primary btn--glow contact__whatsapp">
+        <img src="img/iconowhatsapp.png" alt="WhatsApp">
+        WhatsApp directo
+      </a>
+      <a href="#" target="_blank" class="btn btn--outline contact__social-btn">
+        <img src="img/logoinstagram.png" alt="Instagram">
+        Instagram
+      </a>
+      <a href="#" target="_blank" class="btn btn--outline contact__social-btn">
+        <img src="img/logotiktok.png" alt="TikTok">
+        TikTok
+      </a>
+    </div>
+
+    <!-- NUEVO BLOQUE DE 3 COLUMNAS -->
+    <div class="section__three-cols">
+
+      <!-- Columna 1: Imagen del estudio -->
+      <div class="contact__visual slide-up">
+        <img src="img/ubicacion-bloom.png" alt="Estudio Bloom Beauty Studio" class="contact__studio-img">
+      </div>
+
+      <!-- Columna 2: Mapa ficticio -->
+      <div class="contact__map contact__map--ficticio slide-up">
+        <h3 class="map-title">Nuestra ubicación</h3>
+        <p class="map-address">Calle de los Jazmines, 27 · 30170 Sangonera la Seca, Murcia</p>
+
+        <iframe
+          class="map-frame"
+          src="https://maps.google.com/maps?q=Calle%20de%20los%20Jazmines%2027%20Sangonera%20la%20Seca&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Columna 3: Formulario -->
+      <form class="contact__form slide-up">
+        <label>
+          Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--glow">Enviar mensaje</button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="img/Logo.png" alt="Bloom Logo">
+      <span>Bloom Beauty Studio</span>
+    </div>
+    <div class="footer__links">
+      <a href="intex.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <p class="footer__copy">© 2026 Bloom Beauty Studio – Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>
