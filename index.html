@@ -6,8 +6,64 @@
   <title>Bloom Beauty Studio · Inicio</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Glitter Rain */
+    .glitter-rain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      animation: fadeOut 3s forwards;
+      z-index: 9999;
+    }
+
+    .glitter {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: rgba(255, 215, 255, 0.9);
+      border-radius: 50%;
+      animation: fall 3s linear forwards;
+    }
+
+    @keyframes fall {
+      from { transform: translateY(-50px); opacity: 1; }
+      to { transform: translateY(100vh); opacity: 0; }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; visibility: hidden; }
+    }
+  </style>
+
+  <script>
+    // Generar glitter al entrar
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.createElement("div");
+      container.className = "glitter-rain";
+
+      for (let i = 0; i < 60; i++) {
+        const dot = document.createElement("div");
+        dot.className = "glitter";
+        dot.style.left = Math.random() * 100 + "vw";
+        dot.style.animationDelay = Math.random() * 1.5 + "s";
+        container.appendChild(dot);
+      }
+
+      document.body.appendChild(container);
+
+      setTimeout(() => container.remove(), 3000);
+    });
+  </script>
+
 </head>
-<body class="glitter-rain">
+
+<body>
 
 <header class="header">
   <div class="container header__inner">
@@ -66,9 +122,11 @@
         siempre respetando tu naturalidad y potenciando tu esencia.
       </p>
     </div>
+
     <div class="section__image slide-up">
-      <img src="img/studio.png" alt="Estudio Bloom Beauty">
+      <img src="img/quienes-somos.jpg" alt="Estudio Bloom Beauty">
     </div>
+
   </div>
 </section>
 
